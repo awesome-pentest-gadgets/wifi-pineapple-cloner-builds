@@ -28,7 +28,10 @@ Keep these things in mind:
 * The pendrive has to be formatted from the pineapple panel `Advanced > USB & Storage > Format SD Card`.
 * When pineapple starts it will run the `20-sd-universal` script and install the missing packages on the pendrive from internet.
   If you want to install them manually you can run this: <br>
-  `opkg update && opkg --dest sd install python-logging python-openssl python-sqlite3 python-codecs && python -m compileall`
+  ```bash
+  opkg update && opkg --dest sd install python-logging python-openssl python-sqlite3 python-codecs && python -m compileall
+  ```
+* To use the live scan mode you will need to have all the dependencies installed.
 <br>
 
 
