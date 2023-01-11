@@ -32,6 +32,7 @@ Keep these things in mind:
   opkg update && opkg --dest sd install python-logging python-openssl python-sqlite3 python-codecs && python -m compileall
   ```
 * To use the live scan mode you will need to have all the dependencies installed.
+* Ideally you should have 3 wifi as for example the mk7 has. 
 <br>
 
 
