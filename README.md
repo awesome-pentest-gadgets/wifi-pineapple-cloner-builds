@@ -21,13 +21,16 @@ All builds are made with:
 
 The process will work correctly only if you follow these steps:
 * First install OpenWrt 19.07.7 on the device.
-* Then install the update you will find in this repository. You must install it with the `do not save configuration over reflash` option checked.
-* Your hardware has to have at least 2 wifis and it would be recommended to have 3. To comply with this you can use the usb adapters mentioned in the `recommended setup`.
-* Your hardware must have a pendrive or sd card in order to have the available space needed by the pineapple. It has to be formatted using the tool provided by the panel under `Advanced > USB & Storage > Format SD Card`.
+* Then install the update you will find in this repository.<br>
+You must install it with the `do not save configuration over reflash` option checked.
+* Your hardware has to have at least 2 wifis and it would be recommended to have 3.<br>
+To comply with this you can use the usb adapters mentioned in the `Recommended setup`.
+* Your hardware must have a pendrive or sd card in order to have the available space needed by the pineapple.<br>
+It has to be formatted using the tool provided by the panel under `Advanced > USB & Storage > Format SD Card`.
 * As tetra is made to be used on hardware with 32 MB of flash I had to cut some dependencies from the default installation.<br>
 These dependencies will be installed automatically when the pinapple is connected to the internet and booting.<br>
 If you want to manually run this process `service complete-setup missing_packages`<br>
-Without these dependencies you will not be able to use the live scan type and some modules. However, you will be able to use the timed scans and the rest of the tools.
+Without these dependencies you will not be able to use the live scan type and some modules. However you will be able to use the timed scans and the rest of the tools.
 * The default ssh password is `root`. This will be useful when debugging problems that may occur during installation.
 <br>
 
