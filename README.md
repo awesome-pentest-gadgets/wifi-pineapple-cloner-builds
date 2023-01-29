@@ -119,8 +119,8 @@ ZyXEL | Keenetic Viva rev. B | WiFi Router | 580 | 16 | 128 | [universal](https:
 ZyXEL | Keenetic Extra II  | WiFi Router | 580 | 32 | 128 | [universal](https://github.com/xchwarze/wifi-pineapple-cloner-builds/blob/main/releases/zyxel_keenetic-extra-ii-universal-sysupgrade.bin)
 <br>
 
-* If your manufacturer or model is not built you have to follow the steps of the Universal Wifi pineapple hardware cloner [documentation](https://github.com/xchwarze/wifi-pineapple-cloner).
-* The list of compatible devices is made with the data provided by OpenWRT. The filtering criteria were that they are supported by OpenWRT 19 and that they have the same capabilities as the original hard.
+* If your model is not in the list you have to make your own build following the steps in the [documentation](https://github.com/xchwarze/wifi-pineapple-cloner).
+* The list of compatible devices is made with the data provided by OpenWRT. The criteria used to generate this list were that they are available in OpenWRT 19 and have the same capabilities as the original hardware.
 * OpenWRT data may be incorrect for some devices. 
 
 
