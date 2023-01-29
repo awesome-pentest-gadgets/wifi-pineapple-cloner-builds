@@ -1,8 +1,8 @@
 # Changelog
 
 **Attention**
-The documentation is very useful for troubleshooting in case of failures!<br>
-The project is already completely stable so it's the same as the real hardware, so if you have a problem you're probably doing something wrong!
+The project is now completely stable and matches the real hardware. If you have any problems, you are probably doing something wrong!<br>
+The [documentation](README.md) is very useful for troubleshooting in case of failures!<br>
 
 
 ## 2.8.5 - Oct 28, 2022
@@ -12,7 +12,7 @@ The project is already completely stable so it's the same as the real hardware, 
 - Update panel vendor dependencies 
 - Add complete-setup service for control dependencies and other problems
 - Added busybox custom build to improve firmware size
-- Added workaround for routers that don't have a reset button but wps
+- A workaround has been added for routers that do not have a reset button but have a wps button
 - Other minor changes in panel views
 - Other minor changes in build and logic
 

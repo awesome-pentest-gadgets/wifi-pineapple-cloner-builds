@@ -1,11 +1,9 @@
-# Universal Wifi pineapple hardware cloner: Builds
+# Wifi Pineapple Cloner: Builds
 
 For a long time I have noticed that there are people stealing the authorship of this project that started in 2018.<br>
 Also there is people who go further and are selling the devices ready to use...<br>
 
-So to prevent anyone from being scammed paying for something that is public and free, I decided to make a second repo with the builds already generated.<br>
-Maybe some routers need a little more work as is the case of the GL-AR150 where [this script](https://github.com/xchwarze/wifi-pineapple-cloner/blob/master/fixs/nano/02-network-ar150-fix) does the magic.<br>
-The idea is to invite the community to collaborate with these extra scripts, they can be sent as pull requests from the [original project](https://github.com/xchwarze/wifi-pineapple-cloner).
+So to prevent anyone from being scammed paying for something that is public and free, I decided to make a second repo with the builds already generated.
 
 
 ## Issues and Pull Request
@@ -17,20 +15,20 @@ All this will be handled in the [original project](https://github.com/xchwarze/w
 
 All builds are made with:
 * OpenWrt 19.07.7
-* Universal Wifi pineapple hardware cloner (WPC) v3 
+* Wifi Pineapple Cloner (WPC) v3 
 * The config used to build was the "universal" (flavor: universal). This is designed to be able to mount a TETRA on any hardware.
 <br>
 
-Keep these things in mind:
-* First install OpenWrt 19.07.7 on the device, then install the update that you will find in this repo.
-* Install with `do not save configuration over reflash` option checked!
-* The default ssh password is `root`
-* If you are going to use this on hardware with a single wifi adapter router you have to add a second.
-* If your hardware has less than 32 megabytes of space you have to use a pendrive.
-* The pendrive has to be formatted from the pineapple panel `Advanced > USB & Storage > Format SD Card`.
-* When pineapple starts it will run the `20-sd-universal` script and install the missing packages on the pendrive from internet.
-  If you want to install them manually you can run this: <br>
-  `opkg update && opkg --dest sd install python-logging python-openssl python-sqlite3 python-codecs && python -m compileall`
+The process will work correctly only if you follow these steps:
+* First install OpenWrt 19.07.7 on the device.
+* Then install the update you will find in this repository. You must install it with the `do not save configuration over reflash` option checked.
+* Your hardware has to have at least 2 wifis and it would be recommended to have 3. To comply with this you can use the usb adapters mentioned in the `recommended setup`.
+* Your hardware must have a pendrive or sd card in order to have the available space needed by the pineapple. It has to be formatted using the tool provided by the panel under `Advanced > USB & Storage > Format SD Card`.
+* As tetra is made to be used on hardware with 32 MB of flash I had to cut some dependencies from the default installation.<br>
+These dependencies will be installed automatically when the pinapple is connected to the internet and booting.<br>
+If you want to manually run this process `service complete-setup missing_packages`<br>
+Without these dependencies you will not be able to use the live scan type and some modules. However, you will be able to use the timed scans and the rest of the tools.
+* The default ssh password is `root`. This will be useful when debugging problems that may occur during installation.
 <br>
 
 
@@ -124,9 +122,9 @@ If your manufacturer or model is not built you have to follow the steps of the U
 ## Recomended setup
 
 1. [GL-AR150](https://www.gl-inet.com/products/gl-ar150/) or [GL-AR750S](https://www.gl-inet.com/products/gl-ar750s)
-2. USB 2.0 [2 ports hub](https://www.ebay.com/itm/144520475350)
-2. Generic [RT5370 WIFI adapter](https://www.ebay.com/itm/284904442887) or [MT7612U WIFI adapter](https://www.ebay.com/itm/175219205235) **you're really going to need this on hardware that doesn't have two wifi adapters**
-3. Please support Hak5 work and buy the original hardware!
+1. USB 2.0 [2 ports hub](https://www.ebay.com/itm/144520475350)
+1. Generic [RT5370 WIFI adapter](https://www.ebay.com/itm/284904442887) or [MT7612U WIFI adapter](https://www.ebay.com/itm/175219205235) **you're really going to need this on hardware that doesn't have two wifi adapters**
+1. Please support Hak5 work and buy the original hardware!
 
 
 ## If you want to collaborate with hardware 
