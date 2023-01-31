@@ -5,6 +5,21 @@ The project is now completely stable and matches the real hardware. If you have 
 The [documentation](README.md) is very useful for troubleshooting in case of failures!<br>
 
 
+## 2.9.0 - Jan 31, 2023
+
+### Added
+
+- First Wifi Pineapple Cloner v4 release
+- Add config.php for config panel after flash
+- Other minor changes in panel
+
+### Fixed
+
+- Fix wifi card detection
+- Fix duplicate requests
+- Fix airmon-ng card detection
+
+
 ## 2.8.5 - Oct 28, 2022
 
 ### Added
@@ -56,11 +71,12 @@ The [documentation](README.md) is very useful for troubleshooting in case of fai
 
 ### Added
 
+- First Wifi Pineapple Cloner v3 release
 - Add MIPSEL support
 - Identified 211 supported devices (real list could exceed 300)
 - Unified all updatable material in a single repository (modules, packages, oui data, etc)
 - Support for automatic updates
-- Initial support for reflash support
+- Initial changes for reflash support
 - Other minor changes
 
 ### Fixed

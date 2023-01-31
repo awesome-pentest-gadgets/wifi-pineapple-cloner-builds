@@ -27,6 +27,7 @@ $base_url = 'https://raw.githubusercontent.com/xchwarze/wifi-pineapple-cloner-bu
 
 
 // blah
+echo "[*] Marking version as: {$version}\n";
 echo "[*] Iterate folder content\n";
 $updates = []; 
 $files = array_slice(scandir($folder), 2);
