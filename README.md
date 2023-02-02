@@ -30,7 +30,7 @@ To comply with this you can use the usb adapters mentioned in the `Recommended s
 It has to be formatted using the tool provided by the panel under `Advanced > USB & Storage > Format SD Card`.
 * As tetra is made to be used on hardware with 32 MB of flash I had to cut some dependencies from the default installation.<br>
 These dependencies will be installed automatically when the pinapple is connected to the internet and booting.<br>
-If you want to manually run this process `service complete-setup missing_packages`<br>
+If you want to manually run this process `service wpc-tools missing_packages`<br>
 Without these dependencies you will not be able to use the live scan type and some modules. However you will be able to use the timed scans and the rest of the tools.
 * The default ssh password is `root`. This will be useful when debugging problems that may occur during installation.
 <br>
