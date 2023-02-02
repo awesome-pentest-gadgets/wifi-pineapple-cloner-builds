@@ -16,7 +16,8 @@ All this will be handled in the [original project](https://github.com/xchwarze/w
 All builds are made with:
 * OpenWrt 19.07.7
 * Wifi Pineapple Cloner (WPC) v4
-* The config used to build was the "universal" (flavor: universal). This is designed to be able to mount a TETRA on any hardware.
+* The config used to build was the "universal" (flavor: universal).<br>
+This is designed to be able to mount a TETRA on any hardware.
 <br>
 
 The process will work correctly only if you follow these steps:
